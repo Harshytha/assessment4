@@ -11,7 +11,7 @@ pipeline {
             steps {
                 script {
                     
-                    bat 'javac -cp ".;path/to/your/dependencies/*.jar" src/**/*.java -d target/classes'
+                    bat 'javac -cp ".;task1/assessment-iv/0.0.1-SNAPSHOT.jar" src/**/*.java -d target/classes'
                 }
             }
         }
@@ -19,7 +19,7 @@ pipeline {
             steps {
                 script {
                     
-                    bat 'java -cp ".;path/to/your/dependencies/*.jar;target/classes" org.junit.runner.JUnitCore CalculatorTest'
+                    bat 'java -cp ".;task1/assessment-iv/0.0.1-SNAPSHOT.jar;target/classes" org.junit.runner.JUnitCore CalculatorTest'
                 }
             }
         }
